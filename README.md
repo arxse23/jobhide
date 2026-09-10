@@ -17,6 +17,8 @@ Not on the Chrome Web Store, so it installs unpacked:
 
 ## Usage
 
+<img width="418" height="413" alt="Screenshot 2026-09-10 201406" src="https://github.com/user-attachments/assets/c8da9d22-09ed-4d27-88e3-03a1df902682" />
+
 Click the extension icon, type a keyword, hit **Add**. Any job on Seek whose title contains that keyword is hidden. Click the ✕ on a keyword to remove it.
 
 Keywords are case-insensitive and match partial words — `senior` will hide "Senior Developer" and "Senior Analyst".
