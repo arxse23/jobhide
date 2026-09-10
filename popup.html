@@ -2,13 +2,18 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles.css">
         <title>Job Hide</title>
     </head>
     <body>
-        <h2>Job Hide</h2>
-        <label for="keyword">Keywords to hide:</label>
-        <input type="text" id="keywords"><button type="button" id="addBtn">Add</button>
-        <ul id="listKeywords"></ul>
+        <h1>Seek Job <span>Hide</span></h1>
+        <p>Don't want to see certain jobs with specific keywords? Filter them out!</p>
+        <label for="keyword">Keywords to Hide:</label>
+        <div class="inputGroup">
+        <input type="text" id="keywords" placeholder="e.g. Senior"><button type="button" id="addBtn" class="addBtn">Add</button>
+        </div>
+        <label for="keywordList">Keywords Hidden:</label>
+        <ul id="listKeywords" class="keywordsList"></ul>
         <script src="popup.js"></script>
     </body>
 </html>

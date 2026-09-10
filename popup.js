@@ -8,7 +8,7 @@ function loadKeywords() {
         let li = document.createElement("li");
         li.textContent = keyword;
         let button = document.createElement("button")
-        button.innerText = "X"
+        button.innerText = "x"
         button.addEventListener("click", () => {
             console.log("remove clicked:", keyword);
             chrome.storage.local.get("keywords", function(result) { 
