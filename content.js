@@ -13,4 +13,12 @@ function hideMatchingJobs(keywords) {
 chrome.storage.local.get("keywords", function(result) {
     let words = result.keywords || [];
     hideMatchingJobs(words);
+    let observer = new MutationObserver(function() { 
+        hideMatchingJobs(words); 
+        });
+    observer.observe(document.body, {
+        childList: true,
+        subtree: true,
+        });
     });
+    
